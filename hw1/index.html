@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>HW 1 HTML Sign Up Form</title>
   </head>
   <body>
     <form>
       <div class="container">
         <!-- form header -->
-        <h1>Sign Up</h1>
+        <h1 class="header">Sign Up</h1>
 
         <!-- form input fields -->
         <div class="name">
@@ -68,9 +69,9 @@
 
         <!-- terms and conditions -->
         <div class="terms">
-          <input type="checkbox" name="agree" />I agree
           <p class="conditions">
-            By clicking <b>Register</b>, you agree to the
+            <input type="checkbox" name="agree" />I agree. &nbsp;&nbsp; By clicking
+            <span>Register</span> you agree to the
             <a href="#">Terms and Conditions</a> set out by this site, including
             our cookie use
           </p>
