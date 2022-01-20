@@ -1,0 +1,95 @@
+/* the style sheet for sign up form */
+
+/* applying universal styling for the entire page */
+* {
+  background-color: aliceblue;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+  text-align: center;
+  /* to override the border radius of all input fields */
+  border-radius: 10px;
+}
+
+/* styling header of the form */
+.header {
+  font-size: 50px;
+  text-align: center;
+}
+
+/*  styling the first and last names */
+.name > input[type="text"] {
+  width: 25%;
+  padding: 12px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* to override the text alignment set on the entire page */
+  text-align: left;
+}
+
+/* styling the mobile number section */
+.mobile-no > input[type="text"] {
+  width: 50%;
+  padding: 12px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: left;
+}
+
+/* styling the email address section */
+.email > input[type="email"] {
+  width: 50%;
+  padding: 12px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: left;
+}
+
+/* styling the password section */
+.pwd > input[type="password"] {
+  width: 25%;
+  padding: 12px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: left;
+}
+
+/* styling the terms and conditions section of the form */
+.conditions > span {
+  color: black;
+  background-color: rgb(13, 127, 165);
+  cursor: pointer;
+}
+
+/* styling for register button*/
+.buttons > .register-btn {
+  color: white;
+  background-color: rgb(13, 127, 165);
+  font-size: large;
+  width: 25%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* styling for login button*/
+.buttons > .signin-btn {
+  color: white;
+  background-color: rgb(12, 141, 12);
+  font-size: large;
+  width: 25%;
+  padding: 12px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.terms {
+  /* aligning the items in 1 line */
+  display: inline-block;
+}
