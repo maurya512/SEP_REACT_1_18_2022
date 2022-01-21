@@ -7,7 +7,12 @@
   box-sizing: border-box;
   text-align: center;
   /* to override the border radius of all input fields */
-  border-radius: 10px;
+  border-radius: 4px;
+}
+
+input {
+    display: inline-block;
+    /* float: left; */
 }
 
 /* styling header of the form */
@@ -27,6 +32,12 @@
   text-align: left;
 }
 
+/* change the color of the border when on focus */
+.name > input:focus {
+  outline: none !important;
+  border-color: rgb(13, 127, 165);
+}
+
 /* styling the mobile number section */
 .mobile-no > input[type="text"] {
   width: 50%;
@@ -35,6 +46,12 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   text-align: left;
+}
+
+/* change the color of the border when on focus */
+.mobile-no > input:focus {
+  outline: none !important;
+  border-color: rgb(13, 127, 165);
 }
 
 /* styling the email address section */
@@ -47,6 +64,12 @@
   text-align: left;
 }
 
+/* change the color of the border when on focus */
+.email > input:focus {
+  outline: none !important;
+  border-color: rgb(13, 127, 165);
+}
+
 /* styling the password section */
 .pwd > input[type="password"] {
   width: 25%;
@@ -55,6 +78,12 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   text-align: left;
+}
+
+/* change the color of the border when on focus */
+.pwd > input:focus {
+  outline: none !important;
+  border-color: rgb(13, 127, 165);
 }
 
 /* styling the terms and conditions section of the form */
@@ -92,4 +121,11 @@
 .terms {
   /* aligning the items in 1 line */
   display: inline-block;
+}
+
+/* making the page responsive */
+@media screen and (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
 }
