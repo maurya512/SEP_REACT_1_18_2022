@@ -8,11 +8,24 @@
   text-align: center;
   /* to override the border radius of all input fields */
   border-radius: 4px;
+  padding: 0;
+  margin: 0;
 }
 
-input {
-    display: inline-block;
-    /* float: left; */
+/* styling the container */
+/* .container {
+  padding: 20px;
+} */
+
+[input="text"],
+[input="email"],
+[input="number"] {
+  display: inline-block;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  /* float: left; */
 }
 
 /* styling header of the form */
@@ -36,6 +49,12 @@ input {
 .name > input:focus {
   outline: none !important;
   border-color: rgb(13, 127, 165);
+}
+
+.name:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* styling the mobile number section */
@@ -103,6 +122,7 @@ input {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin: 10px;
 }
 
 /* styling for login button*/
@@ -123,9 +143,18 @@ input {
   display: inline-block;
 }
 
+p {
+  display: inline-block;
+}
 /* making the page responsive */
-@media screen and (max-width: 992px) {
-    .container {
-        flex-direction: column;
-    }
+@media screen and (max-width: 600px) {
+  .name,
+  .email,
+  .mobile-no,
+  .pwd,
+  .terms,
+  .buttons {
+    width: 100%;
+    margin-top: 0;
+  }
 }
