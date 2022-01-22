@@ -1,6 +1,125 @@
+/* * common styling for the entire page */
+* {
+  /* * setting padding and margin to 0 resets the pages' default margin and padding for the entire page and in turn allowing us more control when styling specific elements */
+  padding: 0;
+  margin: 0;
+  /* * to ensure that content box shrinks and expands as to make space for the padding and margins and borders. */
+  box-sizing: border-box;
+  /* * set a basic font family */
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* * styling the section */
+section {
+  /* * the height of this element is equal to 100% of the viewport height */
+  height: 100vh;
+  /* * element's total width plus any horizontal margin, padding and border */
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+/* * styling the row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* * styling the column */
+.column {
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+
+/* * styling the card */
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* * styling the blog title */
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f194c;
+  margin: 1em 0;
+}
+
 /* ! basic styling for p tag to render only two lines of blog content */
 .blog-heading {
-    line-height: 1.5rem;
-    height: 3em; /* * height is 2x line height, so two lines will be displayed*/
-    overflow: hidden; /* * prevents extra line from being visible */
+  line-height: 1.5rem;
+  height: 3em; /* * height is 2x line height, so two lines will be displayed*/
+  overflow: hidden; /* * prevents extra line from being visible */
+  color: rgba(3, 2, 65, 0.918);
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+
+/* * styling for icon wrapper */
+.icon-wrapper {
+  background-color: #2c7bfe;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+
+/* ! card animations when hovering */
+.card:hover {
+  background-position: 0 100%;
+}
+.card:hover .icon-wrapper {
+  background-color: #05021b;
+  color: #2c7bfe;
+}
+.card:hover h3 {
+  color: black;
+}
+.card:hover p {
+  color: black;
+}
+
+/* * adding hover effect for a tags */
+a:hover {
+  text-decoration: none;
+}
+
+/* ! adjusting the mobile responsiveness */
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+
+  .colmun {
+    /* * splits the columns into 2 */
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 3em;
+  }
+
+  .column {
+    /* * splits the columns into 3 to display 3 blog cards */
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
 }
