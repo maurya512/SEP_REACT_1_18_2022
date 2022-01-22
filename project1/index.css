@@ -94,9 +94,14 @@ h3 {
   color: black;
 }
 
+a {
+    color: #05021b;
+}
+
 /* * adding hover effect for a tags */
 a:hover {
   text-decoration: none;
+  color: #2c7bfe;
 }
 
 /* ! adjusting the mobile responsiveness */
