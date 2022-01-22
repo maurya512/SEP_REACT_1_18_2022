@@ -54,7 +54,7 @@ h3 {
 }
 
 /* ! basic styling for p tag to render only two lines of blog content */
-.blog-heading {
+.blog-headline {
   line-height: 1.5rem;
   height: 3em; /* * height is 2x line height, so two lines will be displayed*/
   overflow: hidden; /* * prevents extra line from being visible */
