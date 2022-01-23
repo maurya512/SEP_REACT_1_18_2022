@@ -13,6 +13,13 @@
     float: right;
 } */
 
+img {
+  margin: 10px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: bottom;
+}
 /* * styling the section */
 section {
   /* * the height of this element is equal to 100% of the viewport height */
